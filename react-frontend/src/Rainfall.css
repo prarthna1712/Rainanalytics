@@ -1,0 +1,31 @@
+.rain-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none; /* Ensures clicks pass through */
+  overflow: hidden;
+  z-index: -1; /* Behind other content */
+}
+
+.raindrop {
+  position: absolute;
+  top: -10vh; /* Start above the viewport */
+  width: 2px;
+  height: 27px;
+  background:rgba(107, 210, 222, 0.5); /* Semi-transparent raindrop */
+  animation-name: fall;
+  animation-duration: 100s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  
+
+  
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh); /* Fall down the viewport */
+  }
+}
