@@ -90,3 +90,19 @@ flask run
 ```
 
 The backend will be available at http://localhost:5000.
+
+### 2. Start the Frontend
+
+Navigate to the client directory and run:
+
+```bash
+npm start
+```
+
+The frontend will be available at http://localhost:3000.
+
+## API Endpoints
+
+### Prediction API
+
+- POST /predict: Receives JSON input (temperature, humidity, wind speed) and returns the prediction result.
