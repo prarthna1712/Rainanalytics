@@ -152,7 +152,3 @@ axios
 -Real-time Results: Displays whether rainfall is likely or not based on the model's output.
 -Backend Integration: Communicates with the Flask API for predictions.
 -Responsive Design: User-friendly interface for desktop and mobile use.
-
-## Screenshots
-
-Here are some screenshots showcasing different parts of the application:
