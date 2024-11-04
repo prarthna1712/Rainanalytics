@@ -148,7 +148,7 @@ axios
 
 ## Features
 
--User Input Form: Users can input temperature, humidity, and wind speed for prediction.
--Real-time Results: Displays whether rainfall is likely or not based on the model's output.
--Backend Integration: Communicates with the Flask API for predictions.
--Responsive Design: User-friendly interface for desktop and mobile use.
+- User Input Form: Users can input temperature, humidity, and wind speed for prediction.
+- Real-time Results: Displays whether rainfall is likely or not based on the model's output.
+- Backend Integration: Communicates with the Flask API for predictions.
+- Responsive Design: User-friendly interface for desktop and mobile use.
