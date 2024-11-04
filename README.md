@@ -28,7 +28,27 @@ To set up this rainfall prediction application, follow the steps below for the f
 ## Project Structure
 
 ```
-project-root/ ├── client/ # React frontend │ ├── src/ │ │ ├── components/ # React components (e.g., form, result display) │ │ ├── App.js # Main app file │ │ └── index.js # Entry point ├── server/ # Flask backend │ ├── app.py # Main backend script │ ├── model/ # Directory for data models and scripts │ └── templates/ # HTML templates (if applicable) ├── README.md # Project documentation └── ...
+## Project Structure
+
+project-root/
+├── client/                    # React frontend
+│   ├── public/                # Static assets
+│   ├── src/                   # Source files
+│   │   ├── components/        # React components (e.g., form, result display)
+│   │   ├── App.js             # Main app file
+│   │   ├── index.js           # Entry point
+│   │   └── ...                # Other frontend files
+│   └── package.json           # Frontend dependencies
+│
+├── server/                    # Flask backend
+│   ├── model/                 # Data models and scripts
+│   ├── app.py                 # Main backend script
+│   ├── requirements.txt       # Python dependencies
+│   └── templates/             # HTML templates (if applicable)
+│
+├── .gitignore                 # Git ignore file
+├── README.md                  # Project documentation
+└── ...
 ```
 
 ## Prerequisites
@@ -106,3 +126,33 @@ The frontend will be available at http://localhost:3000.
 ### Prediction API
 
 - POST /predict: Receives JSON input (temperature, humidity, wind speed) and returns the prediction result.
+
+### Example API Usage
+
+Example POST request to the prediction endpoint:
+
+```javascript
+axios
+  .post("/predict", {
+    temperature: 25,
+    humidity: 80,
+    windSpeed: 10,
+  })
+  .then((response) => {
+    console.log(response.data);
+  })
+  .catch((error) => {
+    console.error(error);
+  });
+```
+
+## Features
+
+-User Input Form: Users can input temperature, humidity, and wind speed for prediction.
+-Real-time Results: Displays whether rainfall is likely or not based on the model's output.
+-Backend Integration: Communicates with the Flask API for predictions.
+-Responsive Design: User-friendly interface for desktop and mobile use.
+
+## Screenshots
+
+Here are some screenshots showcasing different parts of the application:
