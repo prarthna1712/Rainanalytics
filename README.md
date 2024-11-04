@@ -26,3 +26,7 @@ This project is a rainfall prediction web application built with a modern tech s
 To set up this rainfall prediction application, follow the steps below for the frontend and backend configuration.
 
 ## Project Structure
+
+```
+project-root/ ├── client/ # React frontend │ ├── src/ │ │ ├── components/ # React components (e.g., form, result display) │ │ ├── App.js # Main app file │ │ └── index.js # Entry point ├── server/ # Flask backend │ ├── app.py # Main backend script │ ├── model/ # Directory for data models and scripts │ └── templates/ # HTML templates (if applicable) ├── README.md # Project documentation └── ...
+```
