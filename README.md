@@ -1,4 +1,4 @@
-# Rainfall Prediction Application
+# Rain-analytics Application
 
 This project is a rainfall prediction web application built with a modern tech stack, integrating React for the frontend and Flask for the backend. The app allows users to input environmental parameters like temperature, humidity, and wind speed to predict the likelihood of rainfall.
 
